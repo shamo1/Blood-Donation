@@ -157,7 +157,7 @@ public class BloodRequests extends AppCompatActivity implements View.OnClickList
 
                 String imageUrl = "https://maps.googleapis.com/maps/api/staticmap?center=" + lat + "," + lang + "=&zoom=17&size=600x300&maptype=normal\n" +
                         "&markers=color:red%7Clabel:C%7C" + lat + "," + lang + "\n" +
-                        "&key=AIzaSyAvJi0mHcgpIC_F3mjTwfNDd-icZfoiDqA ";
+                        "&key=";
                 Picasso.get().load(imageUrl).into(holder.imgNeedPlace);
                 final String uId = model.getuId();
                 if (uId.equals(FirebaseAuth.getInstance().getCurrentUser().getUid())) {
