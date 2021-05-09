@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.AvailableBlood">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarAvailableBlood"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunitop_bold"
+            android:text="Available Blood"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerviewAvailableBlood"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbarAvailableBlood"
+        android:layout_marginTop="10dp"
+        android:overScrollMode="never" />
+
+
+</RelativeLayout>

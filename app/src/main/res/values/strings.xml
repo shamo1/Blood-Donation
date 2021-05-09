@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Blood Donation Kotli</string>
+    <string name="Enter_Email">Email</string>
+    <string name="password">Password</string>
+    <string name="slogan">Bring a life back to power Make blood donation your responsibility</string>
+    <string name="error">Password Should be 8 character long</string>
+    <string name="register">Register Yourself</string>
+    <string name="startjourney">Start your Journey to save humanity</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="open_drawer">Open Drawer</string>
+    <string name="close_drawer">Close Drawer</string>
+
+    <string-array name="bloodgroupitems">
+        <item>A+</item>
+        <item>A-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+        <item>O+</item>
+        <item>O-</item>
+    </string-array>
+    <string-array name="sortby">
+        <item>Over All</item>
+        <item>City</item>
+    </string-array>
+</resources>

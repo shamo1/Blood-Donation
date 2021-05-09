@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".Activities.Reminder">
+
+    <TextView
+        android:id="@+id/tvReminder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/nunitop_bold"
+        android:text="Donation Reminder"
+        android:textColor="@color/colorWhite"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/reminderSlogn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvReminder"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/nunito_lite"
+        android:text="Create Reminder to reminde to save humanity"
+        android:textAllCaps="true"
+        android:textColor="@color/colorWhite" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/reminderSlogn"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/linear_layout_bg"
+        android:outlineAmbientShadowColor="@android:color/black">
+
+
+        <TextView
+            android:id="@+id/tvPicDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/nunitop_bold"
+            android:text="Pick Date"
+            android:textColor="@android:color/black" />
+
+        <CalendarView
+            android:id="@+id/calanderViewReminder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvPicDate"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorWhite" />
+
+        <TextView
+            android:id="@+id/remindet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/calanderViewReminder"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/nunitop_bold"
+            android:text="Reminder"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerviewReminder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/remindet"
+            android:layout_marginTop="10dp"
+            android:overScrollMode="never" />
+
+    </RelativeLayout>
+</RelativeLayout>

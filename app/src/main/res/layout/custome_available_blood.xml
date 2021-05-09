@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:elevation="10dp"
+        app:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageViewAvalableBlood"
+                android:layout_width="65sp"
+                android:layout_height="65sp"
+                android:layout_marginBottom="10dp"
+                android:baselineAligned="false"
+                app:civ_border_color="@color/colorPrimary"
+                app:civ_border_width="1dp" />
+
+            <TextView
+                android:id="@+id/uNmaeAvaillableBlood"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:fontFamily="@font/nunitop_bold"
+                android:gravity="center"
+                android:text="User Name" />
+
+            <TextView
+                android:id="@+id/availableBloodgroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:baselineAligned="false"
+                android:fontFamily="@font/nunitop_bold"
+                android:gravity="center"
+                android:text="A+"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/availableBloodAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:fontFamily="@font/nunitop_bold"
+                android:gravity="center"
+                android:text="Address" />
+
+            <TextView
+                android:id="@+id/availablStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:background="@drawable/online_shape"
+                android:fontFamily="@font/nunito_lite"
+                android:paddingHorizontal="10dp"
+                android:text="online"
+                android:textColor="@color/colorWhite" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

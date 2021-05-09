@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/layoutTop"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="@drawable/shadown_layout">
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/mainlogo"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textviewLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mainlogo"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/nunitop_bold"
+        android:gravity="center_horizontal"
+        android:letterSpacing="0.2"
+        android:text="Login"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/textviewDexc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textviewLogin"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/nunito_lite"
+        android:gravity="center"
+        android:text="@string/slogan"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textviewDexc"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="40sp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="40sp"
+        android:elevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="20sp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/edtEmail"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:boxStrokeColor="@color/colorPrimary"
+                app:boxStrokeWidth="1dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/Enter_Email"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/colorPrimary" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/edtpassword"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                app:boxStrokeColor="@color/colorPrimary"
+                app:boxStrokeWidth="1dp"
+                app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:textColor="@color/colorPrimary" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/errorText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_lite"
+                android:text="@string/error"
+                android:textColor="@color/colorPrimary"
+                android:textSize="10dp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/colorPrimaryDark"
+                android:fontFamily="@font/nunitop_bold"
+                android:text="Login"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="20dp" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@+id/cardView"-->
+    <!--        android:layout_marginLeft="40dp"-->
+    <!--        android:layout_marginTop="10dp"-->
+    <!--        android:layout_marginRight="40dp"-->
+    <!--        android:orientation="vertical">-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:fontFamily="@font/nunitop_bold"-->
+    <!--            android:text="Continue With"-->
+    <!--            android:textColor="@color/colorPrimary"-->
+    <!--            android:textSize="14dp" />-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:layout_marginTop="10dp"-->
+    <!--            android:gravity="center"-->
+    <!--            android:orientation="horizontal"-->
+    <!--            android:weightSum="2">-->
+
+    <!--            <LinearLayout-->
+    <!--                android:id="@+id/googleLogin"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:layout_weight="1"-->
+    <!--                android:background="@color/googlecolor"-->
+    <!--                android:elevation="10dp"-->
+    <!--                android:onClick="googleLogin"-->
+    <!--                android:weightSum="2">-->
+
+    <!--                <ImageView-->
+    <!--                    android:layout_width="50dp"-->
+    <!--                    android:layout_height="50dp"-->
+    <!--                    android:padding="5dp"-->
+    <!--                    android:src="@drawable/google" />-->
+
+    <!--                <TextView-->
+
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:layout_gravity="center"-->
+    <!--                    android:fontFamily="@font/nunitop_bold"-->
+    <!--                    android:text="Google"-->
+    <!--                    android:textAlignment="center"-->
+    <!--                    android:textColor="@color/colorWhite" />-->
+    <!--            </LinearLayout>-->
+
+    <!--            &lt;!&ndash;            <LinearLayout&ndash;&gt;-->
+    <!--            &lt;!&ndash;                android:id="@+id/twitterLogin"&ndash;&gt;-->
+    <!--            &lt;!&ndash;                android:layout_width="match_parent"&ndash;&gt;-->
+    <!--            &lt;!&ndash;                android:layout_height="match_parent"&ndash;&gt;-->
+    <!--            &lt;!&ndash;                android:layout_marginLeft="10dp"&ndash;&gt;-->
+    <!--            &lt;!&ndash;                android:layout_weight="1"&ndash;&gt;-->
+    <!--            &lt;!&ndash;                android:background="@color/googlecolor"&ndash;&gt;-->
+    <!--            &lt;!&ndash;                android:elevation="10dp"&ndash;&gt;-->
+    <!--            &lt;!&ndash;                android:weightSum="2">&ndash;&gt;-->
+
+    <!--            &lt;!&ndash;                <ImageView&ndash;&gt;-->
+    <!--            &lt;!&ndash;                    android:layout_width="50dp"&ndash;&gt;-->
+    <!--            &lt;!&ndash;                    android:layout_height="50dp"&ndash;&gt;-->
+    <!--            &lt;!&ndash;                    android:padding="5dp"&ndash;&gt;-->
+    <!--            &lt;!&ndash;                    android:src="@drawable/twitter_icon" />&ndash;&gt;-->
+
+    <!--            &lt;!&ndash;                <TextView&ndash;&gt;-->
+
+    <!--            &lt;!&ndash;                    android:layout_width="match_parent"&ndash;&gt;-->
+    <!--            &lt;!&ndash;                    android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--            &lt;!&ndash;                    android:layout_gravity="center"&ndash;&gt;-->
+    <!--            &lt;!&ndash;                    android:fontFamily="@font/nunitop_bold"&ndash;&gt;-->
+    <!--            &lt;!&ndash;                    android:text="Twitter"&ndash;&gt;-->
+    <!--            &lt;!&ndash;                    android:textAlignment="center"&ndash;&gt;-->
+    <!--            &lt;!&ndash;                    android:textColor="@color/colorWhite" />&ndash;&gt;-->
+    <!--            &lt;!&ndash;            </LinearLayout>&ndash;&gt;-->
+    <!--        </LinearLayout>-->
+
+    <!--    </LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito_lite"
+            android:text="Don't have account?" />
+
+        <TextView
+            android:id="@+id/linkCreateaccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunitop_bold"
+            android:text="Create One."
+            android:textColor="@color/colorPrimary" />
+    </LinearLayout>
+</RelativeLayout>

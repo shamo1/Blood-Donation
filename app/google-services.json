@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "234518785343",
+    "project_id": "blood-donation-kotli",
+    "storage_bucket": "blood-donation-kotli.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:234518785343:android:cbb6bd2bfe98e9bf55b78a",
+        "android_client_info": {
+          "package_name": "com.example.blooddonationkotli"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "234518785343-81r54ifc9h8llefr9m8nih51t9tsudkp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAysu8bB6y_4k8fjSbtuZTSsosPj-lmWIs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "234518785343-81r54ifc9h8llefr9m8nih51t9tsudkp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

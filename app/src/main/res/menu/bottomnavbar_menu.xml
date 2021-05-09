@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/dashboard"
+        android:icon="@drawable/dashboard"
+        android:title="Dashboard" />
+    <item
+        android:id="@+id/nearby"
+        android:icon="@drawable/marker"
+        android:title="Nearby Donnor" />
+    <item
+        android:id="@+id/alert"
+        android:icon="@drawable/alert"
+        android:title="Notifications" />
+
+</menu>
