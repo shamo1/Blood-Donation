@@ -1,6 +1,6 @@
 # Blood Donation App
 
-## Blood Doantion is an android app where user can Recieve blood, Donate blood track nearby user for blood donation.
+## Blood Donation is an android app where user can recive blood, Donate blood track nearby user for blood donation.
 
 > Technologies used
  **Languages_Used**
